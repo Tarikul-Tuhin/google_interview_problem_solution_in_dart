@@ -16,12 +16,12 @@ void main() {
   /////////// First Approach //////////////////////
 
   ///   Let's say our sum is 20. and The list is [1, 6, 4, 4, 5, 16, 12, 4]
-  /// if we substract 20 with the first element of the list which is 20 - 1 = 19. it will check whether  19 is in the set or not. if yes, it will return true. here 19 is not in the set. so it does not return nothing. here it won't enter into the if statement and return nothing {19}
-  /// if we substract 20 with the second element of the list which is 20 - 6 = 14. it will check whether 14 is in the set or not. if yes, it will return true. here 14 is not in the set. so it does not return anything. here it won't enter into the if statement and return nothing {19, 14}
+  /// if we substract 20 with the first element of the list which is 20 - 1 = 19. it will check whether  1 is in the set or not. if yes, it will return true. here 19 is not in the set. so it does not return nothing. here it won't enter into the if statement and return nothing {19}
+  /// if we substract 20 with the second element of the list which is 20 - 6 = 14. it will check whether 6 is in the set or not. if yes, it will return true. here 14 is not in the set. so it does not return anything. here it won't enter into the if statement and return nothing {19, 14}
   /// 20 - 4 = 16 ==> {19, 14, 16}
   /// 20 - 4 = 16 ==> {19, 14, 16} . It is a set. so it will not put common elements again. so we can see only one 16 here. We could have used List instead of set. Then we can observe the difference between set and list.
   /// 20 - 5 = 15 ==> {19, 14, 16, 15}
-  /// then 5th item is 16. So the 'if statement' will check 16 is avaialable in the set or not. it is available in the set. so it will return true
+  /// then 6th item is 16. 20-16 =4, So the 'if statement' will check 16 is avaialable in the set or not. it is available in the set. so it will return true
   /// Here is the mathematical terms behind it. 20 = 16+4 .
   /// In this solution, 16 and 4 is a pair of sum for 20. if we substract 20-4 = 16 in the third element of list, then it will be saved in the set and look for 16. When we got 16 in the 5th element before substracting, it finally found the second number of the pair 16. remeber, the first number of pair we found was 4. but we are putting the substracting element i.e. 16 in the set to get the pair element of 4, which is 16. so before substracting with the 5th element, we checked the 5th element 16 is in the set or not. It found and return true. Exit from the loop
 
